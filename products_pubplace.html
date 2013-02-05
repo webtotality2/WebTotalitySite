@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>WebTotality</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+    <link type="text/css" rel="stylesheet" href="styles/footerstyle.css">
+    <link type="text/css" rel="stylesheet" href="styles/headerstyle.css">
+
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery.easing.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+
+    <script type='text/javascript'> // Functions for the hero nav animations
+      $(document).ready( function() {
+        var speed = 200;
+        $('#captionimg1').hover(function() {
+          $('#caption1').animate({opacity: 1, right: 85}, speed, 'easeOutSine');
+        },function() {
+          $('#caption1').stop().animate({opacity: 0, right: 75}, speed, 'easeOutSine');
+        });
+        $('#captionimg2').hover(function() {
+          $('#caption2').animate({opacity: 1, right: 85}, speed, 'easeOutSine');
+        },function() {
+          $('#caption2').stop().animate({opacity: 0, right: 75}, speed, 'easeOutSine');
+        });
+        $('#captionimg3').hover(function() {
+          $('#caption3').animate({opacity: 1, right: 85}, speed, 'easeOutSine');
+        },function() {
+          $('#caption3').stop().animate({opacity: 0, right: 75}, speed, 'easeOutSine');
+        });
+      });
+    </script>
+  
+</head>
+<body>
+  <div id="main">
+
+    <div id="upper" style="height: 70px;">
+
+      <div id="headerbackground"><div id="secondaryheaderbackground"></div></div>
+      <div id="header">
+        <div id="headercontainer">
+          <a href="/index.html"><div id="branding"><img id="logo" src="/images/logo.png" /></div></a>
+          <div id="nav">
+            <ul>
+              <a href="/index.html"><li class="navlinks" >Home</li></a>
+              <a href="/products.html"><li class="navlinks" >Products</li></a>
+              <a href="/pricing.html"><li class="navlinks" >Pricing</li></a>
+              <a href="/support.html"><li class="navlinks" >Support</li></a>
+              <a href="http://www.pubplace.com"><li class="navlinks" style="padding: 10px 0px 10px 27px;" >Try It</li></a>
+            </ul>
+          </div><!-- End Nav -->
+        </div><!-- End Header Container -->
+      </div><!-- End Header -->
+    </div><!-- End Upper -->
+
+    <div class="backgrounded">
+      <img class="shadow" src="/images/shadow.png" />
+      <div id="secpanel" style="background: url(/images/watermark_contentserver.png) no-repeat right; background-position-y: -60px; ">
+        <h1>PubPlace</h1>
+        <h3>A better way to Publish</h3>
+
+        <p>Totality Content Server allows you to publish all your content to the web including Adobe PDF, Microsoft Word, paper and high resolution images. Websites and web applications can now create, view, edit, print, scan and collaborate using content that already exists in your organization. Even better, your content can now integrate with the web-standard HTML content and functionality currently used on your websites and web applications.</p>
+        <div style="width: 130px; position: absolute; right: 0px; top: 48px; height: 320px;">
+          <a class="mainbutton mainbutton2" id="captionimg1" href="/pricing.html" ><img style="padding: 15px 0px 0px 5px;" src="/images/cart.png" /></a>
+          <a class="mainbutton mainbutton2" id="captionimg2" href="#" ><img style="padding: 13px 0px 0px 5px;" src="/images/documents.png" /></a>
+          <a class="mainbutton mainbutton2" id="captionimg3" href="http://www.pubplace.com" ><img style="padding: 13px 0px 0px 0px;" src="/images/mark.png" /></a>
+          <h4 class="caption" id="caption1">Pricing</h4>
+          <h4 class="caption" id="caption2">User Guide</h4>
+          <h4 class="caption" id="caption3">Try It Online</h4>
+        </div>
+      </div><!-- End Secondary Panel -->
+    </div><!-- End Backgrounded -->
+
+
+    <!-- Begin Features -->
+
+    <div class="tertdiv">
+      <h2>Create</h2>
+      <h4 class="h4subtitle">Create content using PubPlace templates, your own custom templates, PDF, Word &amp; Excel documents and more...</h4>
+      <div class="featpt">
+        <h3 class="minorh3">Provide XML data to complete form fields</h3>
+        <ul>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Save Microsoft Word Documents to PDF</li>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Specify page range</li>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Specify zoom</li>
+        </ul>
+      </div><!-- End Feature Point -->
+      <div class="featpt" style="float: right;">
+        <h3 class="minorh3">Provide XML data to customize</h3>
+        <ul>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Edit any document in the browser</li>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Create meetings and collaborate</li>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Integrate with GraphOn GO-Global Server</li>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Create private workspaces</li>
+        </ul>
+      </div><!-- End Feature Point -->
+      <div class="featpt" style="width: 960px; margin: -20px 0px 50px 0px;">
+        <h3 class="minorh3">Keep track of form results</h3>
+        <ul>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Get HTML views of Microsoft Word and Adobe PDF documents</li>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />View specific page ranges</li>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Specify zoom</li>
+        </ul>
+      </div><!-- End Feature Point -->
+    </div><!-- End Tertiary -->
+
+    <img class="shadow" src="/images/shadow.png" />
+    <div class="tertdiv">
+      <h2>Publish</h2>
+      <h4 class="h4subtitle">Publish your content on PubPlace, your website, facebook or via email</h4>
+
+      <div class="featpt">
+        <h3 class="minorh3">Get list of printers visible to user</h3>
+        <ul>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Get list of printer trays for each printer</li>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Filler</li>
+        </ul>
+      </div><!-- End Feature Point -->
+      <div class="featpt" style="">
+        <h3 class="minorh3">Issue print commands to any visible printer</h3>
+        <ul>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Specify printer trays</li>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Specify # of copies</li>
+        </ul>
+      </div><!-- End Feature Point -->
+      <div class="featpt" style="">
+        <h3 class="minorh3">Get list of scanners visible to user</h3>
+      </div><!-- End Feature Point -->
+      <div class="featpt" style="">
+        <h3 class="minorh3">Issue scan commands to any visible scanner</h3>
+        <ul>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Specify destination for scanned file</li>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Specify desired file format: PDF or Microsoft Word</li>
+        </ul>
+      </div><!-- End Feature Point -->
+    </div><!-- End Tertiary -->
+
+    <img class="shadow" src="/images/shadow.png" />
+    <div class="tertdiv">
+      <h2>Interact</h2>
+      <h4 class="h4subtitle">Interact with your audience. Republish form responses in form letters &amp; templates.</h4>
+
+      <div class="featpt">
+        <h3 class="minorh3">Get list of printers visible to user</h3>
+        <ul>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Get list of printer trays for each printer</li>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Filler</li>
+        </ul>
+      </div><!-- End Feature Point -->
+      <div class="featpt" style="">
+        <h3 class="minorh3">Issue print commands to any visible printer</h3>
+        <ul>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Specify printer trays</li>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Specify # of copies</li>
+        </ul>
+      </div><!-- End Feature Point -->
+      <div class="featpt" style="">
+        <h3 class="minorh3">Get list of scanners visible to user</h3>
+      </div><!-- End Feature Point -->
+      <div class="featpt" style="">
+        <h3 class="minorh3">Issue scan commands to any visible scanner</h3>
+        <ul>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Specify destination for scanned file</li>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Specify desired file format: PDF or Microsoft Word</li>
+        </ul>
+      </div><!-- End Feature Point -->
+    </div><!-- End Tertiary -->
+
+    <img class="shadow" src="/images/shadow.png" />
+    <div class="tertdiv">
+      <h2>Report</h2>
+      <h4 class="h4subtitle">View &amp; download reports for all your documents &amp; forms</h4>
+
+      <div class="featpt">
+        <h3 class="minorh3">Get list of printers visible to user</h3>
+        <ul>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Get list of printer trays for each printer</li>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Filler</li>
+        </ul>
+      </div><!-- End Feature Point -->
+      <div class="featpt" style="">
+        <h3 class="minorh3">Issue print commands to any visible printer</h3>
+        <ul>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Specify printer trays</li>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Specify # of copies</li>
+        </ul>
+      </div><!-- End Feature Point -->
+      <div class="featpt" style="">
+        <h3 class="minorh3">Get list of scanners visible to user</h3>
+      </div><!-- End Feature Point -->
+      <div class="featpt" style="">
+        <h3 class="minorh3">Issue scan commands to any visible scanner</h3>
+        <ul>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Specify destination for scanned file</li>
+          <li><img class="darkcheck2" src="/images/checkdark.png" />Specify desired file format: PDF or Microsoft Word</li>
+        </ul>
+      </div><!-- End Feature Point -->
+    </div><!-- End Tertiary -->
+
+    <div class="push"></div>
+  </div><!-- End Main -->
+
+
+
+  <!-- Begin Footer -->
+  <div id="footer" style="margin: 0px auto 0px auto;">
+    <div id="footerborder"></div>
+    <img class="shadow" src="/images/shadow.png" />
+    <div id="footerbox">
+      <div class="footersection" style="margin-left: -15px; padding-left: 0px">
+        <ul><a href="/products.html"><h4>Products</h4></a>
+          <li><a href="http://www.pubplace.com">PubPlace</a></li>
+          <li><a href="/products_cs.html">Totality Content Server</a></li>
+          <li><a href="/products_ps.html">Totality PS</a></li>
+        </ul>
+      </div><!-- End Footer Section -->
+      <div class="footersection">
+        <ul><h4>Developer</h4>
+          <li><a href="http://WebTotality.PubPlace.com?id=p22104d709807">Word &amp; PDF Template Specs</a></li>
+          <li><a href="http://WebTotality.PubPlace.com?id=p22104d22106">Totality REST API</a></li>
+        </ul>
+      </div><!-- End Footer Section -->
+      <div class="footersection">
+        <ul><a href="/corporate.html"><h4>Corporate</h4></a>
+          <li><a href="/investors.html">Investors</a></li>
+          <li><a href="http://WebTotality.PubPlace.com?id=p5774d198909">Terms of Service</a></li>
+          <li><a href="http://WebTotality.PubPlace.com?id=p5774d198759">Privacy Policy</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+      </div><!-- End Footer Section -->
+      <div class="footersection" style="border-right: none; padding-right: 0px">
+        <ul><h4>Download</h4>
+          <li><a href="#">Totality PS Free</a></li>
+          <li><a href="#">Totality Content Server Demo</a></li>
+        </ul>
+      </div><!-- End Footer Section -->
+    </div><!-- End Footer Box -->
+    <div id="corporate">
+      <p>WebTotality and www.WebTotality.com &copy; 2013 WebTotality corp.</p>
+    </div><!-- End Corporate -->
+  </div><!-- End Footer -->
+
+
+
+ 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!--<div class="whitepanel" style="position: absolute; top: 20px; left: 950px; width: 850px; height: 200px;">
+        <div class="roundshadow"></div>
+        <div class="whitegrad smshadow tenround actualpanel">
+        </div>
+      </div>-->

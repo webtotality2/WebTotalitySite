@@ -1,0 +1,418 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>WebTotality</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+    <link type="text/css" rel="stylesheet" href="styles/footerstyle.css">
+    <link type="text/css" rel="stylesheet" href="styles/headerstyle.css">
+
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery.easing.js"></script>
+
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <style type="text/css">
+
+
+      #pricingtable { font-size: 14px; color: #444; }
+      .row1, .row2 { height: 28px; }
+
+      .row2 { background: rgba(1000, 1000, 1000, .5); }
+
+      .boldrow { font-weight: bold; }
+
+      .pricingheader { width: 180px; height: 110px; }
+
+      .headerrow {  }
+
+      .smalltext { font-size: 9px; }
+
+      #pricingtable .darkcheck { margin: 0px 0px -3px 0px; opacity: .45; }
+
+      .row1 .column3, .row1 .column5, .row1 .column7, .row1 .column1 { background: rgba(1000, 1000, 1000, .6); }
+
+      .row1 .column2, .row1 .column4, .row1 .column6, .row1 .column8 { background: #E7E7E7; }
+      .row2 .column2, .row2 .column4, .row2 .column6, .row2 .column8 { background: #F5F5F5; }
+
+      .column2, .column4, .column6, .column8 { width: 180px; text-align: center; }
+      .column3, .column5, .column7 { width: 10px; }
+      .column1 { width: 190px; padding: 0px 0px 0px 20px;}
+
+      .pricinginfo {
+        background: #FFF;
+        width: 960px;
+        padding: 10px 0px 66px 0px;
+        margin: 0 auto;
+        position: relative;
+        height: 230px;
+      }
+
+      .purchase_subtitles {
+        position: absolute;
+        top: 150px;
+        left: 46px;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: #999;
+      }
+
+      #download_mini_panel, #call_mini_panel, #email_mini_panel {
+        height: 77px;
+        width: 77px;
+        padding: 0px;
+      }
+
+    </style>
+  
+</head>
+<body>
+  <div id="main">
+
+    <div id="upper" style="height: 70px;">
+
+      <div id="headerbackground"><div id="secondaryheaderbackground"></div></div>
+      <div id="header">
+        <div id="headercontainer">
+          <a href="/index.html"><div id="branding"><img id="logo" src="/images/logo.png" /></div></a>
+          <div id="nav">
+            <ul>
+              <a href="/index.html"><li class="navlinks" >Home</li></a>
+              <a href="/products.html"><li class="navlinks" >Products</li></a>
+              <a href="/pricing.html"><li class="navlinks" >Pricing</li></a>
+              <a href="/support.html"><li class="navlinks" >Support</li></a>
+              <a href="http://www.pubplace.com"><li class="navlinks" style="padding: 10px 0px 10px 27px;" >Try It</li></a>
+            </ul>
+          </div><!-- End Nav -->
+        </div><!-- End Header Container -->
+      </div><!-- End Header -->
+    </div><!-- End Upper -->
+
+
+
+    <div class="backgrounded">    
+      <div id="secpanel">
+        <h1>Totality Content Server</h1>
+        <h3 style="margin: 0px 0px 170px 0px;">Publish all your content to the web</h3>
+        <div class="pricing">
+          <h4 class="pricingtitle" style="margin: 18px 0px 10px 0px;">Base Server</h4>
+          <h3>$2995</h3>
+          <p style="margin: 0px 0px 5px 0px; text-align: center;">Per Production Server</p>
+        </div>
+        <div class="pricing">
+          <h4 class="pricingtitle">Print &amp; Scan Module</h4>
+          <h3>$2995</h3>
+          <p style="margin: 0px 0px 5px 0px; text-align: center;">Per Production Server</p>
+        </div>
+        <div class="pricing">
+          <h4 class="pricingtitle">Forms &amp; Reports Module</h4>
+          <h3>$2995</h3>
+          <p style="margin: 0px 0px 5px 0px; text-align: center;">Per Production Server</p>
+        </div>
+        <div class="pricing">
+          <h4 class="pricingtitle" style="margin: 18px 0px 10px 0px;">PubPlace Module</h4>
+          <h3>$2995</h3>
+          <p style="margin: 0px 0px 5px 0px; text-align: center;">Per Production Server</p>
+        </div>
+      </div><!-- End Secondary Panel -->
+    </div><!-- End Backgrounded -->
+    <div class="pricinginfo">
+      <h2 style="padding: 5px 0px 0px 0px;">How to Purchase</h2>
+
+      <div style="display: inline-block; margin: 0px 0px 0px 36px; position: relative;">
+
+        <a href="#">
+          <div class="roundshadow" style="top: 0px; width: 76px; height: 84px;"></div>
+          <div class="whitegrad smshadow tenround mini_subpanel" id="download_mini_panel">
+            <img src="/images/download_blue.png" style="position: absolute; left: 10px; top: 11px;"/>
+          </div><!-- End Mini Panel -->
+        </a>
+        <img src="/images/dottedline.png" style="position: absolute; top: 44px; left: 85px;" />
+
+        <div style="display: inline-block; margin: 0px 0px 0px 106px; position: relative;">
+          <a href="#">
+            <div class="roundshadow" style="top: 0px; width: 76px; height: 84px;"></div>
+            <div class="whitegrad smshadow tenround mini_subpanel" id="call_mini_panel">
+              <img src="/images/call.png" style="position: absolute; left: 13px; top: 18px;"/>
+            </div><!-- End Mini Panel -->
+          </a>
+
+          <a target="_blank" href="mailto:sales@webtotality.com">
+            <div class="roundshadow" style="top: 0px; width: 76px; height: 84px;"></div>
+            <div class="whitegrad smshadow tenround mini_subpanel" id="email_mini_panel">
+              <img src="/images/email.png" style="position: absolute; left: 12px; top: 24px;"/>
+            </div><!-- End Mini Panel -->
+          </a>
+        </div>
+      </div>
+
+      <p class="purchase_subtitles">Download</p>
+      <p class="purchase_subtitles" style="left: 260px;">Call</p>
+      <p class="purchase_subtitles" style="left: 351px;">Email</p>
+      <h4 style="position: absolute; top: 190px; left: 0px; text-align: center; line-height: 23px;">Download Software</h4>
+      <h4 style="position: absolute; top: 190px; left: 230px; text-align: center; line-height: 23px;">Contact Us to Purchase<br>&amp; get a Product Key</h4>
+
+    </div>
+    
+
+    <div class="backgrounded">
+      <div id="secpanel">
+        <h1>PubPlace</h1>
+        <h3 style="margin: 0px 0px 30px 0px;">A better way to Publish</h3>
+
+        <table id="pricingtable" border="0" cellpadding="0" cellspacing="0" >
+          <tr class="headerrow">
+            <td class="column1"></td>
+            <td class="column2"><img class="pricingheader" src="/images/basic.png" /></td>
+            <td class="column3"></td>
+            <td class="column4"><img class="pricingheader" src="/images/pro.png" /></td>
+            <td class="column5"></td>
+            <td class="column6"><img class="pricingheader" src="/images/premiere.png" /></td>
+            <td class="column7"></td>
+            <td class="column8"><img class="pricingheader" src="/images/enterprise.png" /></td>
+          </tr>
+          <tr class="row1 boldrow">
+            <td class="column1">Price</td>
+            <td class="column2">Free</td>
+            <td class="column3"></td>
+            <td class="column4">$9.95/<span class="smalltext">mo</span></td>
+            <td class="column5"></td>
+            <td class="column6">$24.95/<span class="smalltext">mo</span></td>
+            <td class="column7"></td>
+            <td class="column8">$149.95/<span class="smalltext">mo</span></td>
+          </tr>
+          <tr class="row2">
+            <td class="column1">PDF Publishing</td>
+            <td class="column2"><img class="darkcheck" src="/images/checkdark.png" /></td>
+            <td class="column3"></td>
+            <td class="column4"><img class="darkcheck" src="/images/checkdark.png" /></td>
+            <td class="column5"></td>
+            <td class="column6"><img class="darkcheck" src="/images/checkdark.png" /></td>
+            <td class="column7"></td>
+            <td class="column8"><img class="darkcheck" src="/images/checkdark.png" /></td>
+          </tr>
+          <tr class="row1">
+            <td class="column1">Word Publishing</td>
+            <td class="column2"><img class="darkcheck" src="/images/checkdark.png" /></td>
+            <td class="column3"></td>
+            <td class="column4"><img class="darkcheck" src="/images/checkdark.png" /></td>
+            <td class="column5"></td>
+            <td class="column6"><img class="darkcheck" src="/images/checkdark.png" /></td>
+            <td class="column7"></td>
+            <td class="column8"><img class="darkcheck" src="/images/checkdark.png" /></td>
+          </tr>
+          <tr class="row2">
+            <td class="column1">Collaboration</td>
+            <td class="column2"><img class="darkcheck" src="/images/checkdark.png" /></td>
+            <td class="column3"></td>
+            <td class="column4"><img class="darkcheck" src="/images/checkdark.png" /></td>
+            <td class="column5"></td>
+            <td class="column6"><img class="darkcheck" src="/images/checkdark.png" /></td>
+            <td class="column7"></td>
+            <td class="column8"><img class="darkcheck" src="/images/checkdark.png" /></td>
+          </tr>
+          <tr class="row1">
+            <td class="column1">Forms &amp; Polls</td>
+            <td class="column2">1</td>
+            <td class="column3"></td>
+            <td class="column4">5</td>
+            <td class="column5"></td>
+            <td class="column6">20</td>
+            <td class="column7"></td>
+            <td class="column8">Unlimited</td>
+          </tr>
+          <tr class="row2">
+            <td class="column1">Scan to PDF</td>
+            <td class="column2">10/<span class="smalltext">mo</span></td>
+            <td class="column3"></td>
+            <td class="column4">100/<span class="smalltext">mo</span></td>
+            <td class="column5"></td>
+            <td class="column6">500/<span class="smalltext">mo</span></td>
+            <td class="column7"></td>
+            <td class="column8">Unlimited</td>
+          </tr>
+          <tr class="row1">
+            <td class="column1">Content Management</td>
+            <td class="column2">Basic</td>
+            <td class="column3"></td>
+            <td class="column4"><img class="darkcheck" src="/images/checkdark.png" /></td>
+            <td class="column5"></td>
+            <td class="column6"><img class="darkcheck" src="/images/checkdark.png" /></td>
+            <td class="column7"></td>
+            <td class="column8"><img class="darkcheck" src="/images/checkdark.png" /></td>
+          </tr>
+          <tr class="row2">
+            <td class="column1">Reporting</td>
+            <td class="column2"></td>
+            <td class="column3"></td>
+            <td class="column4">Good</td>
+            <td class="column5"></td>
+            <td class="column6">Better</td>
+            <td class="column7"></td>
+            <td class="column8">Best</td>
+          </tr>
+          <tr class="row1">
+            <td class="column1">Custom Form Styles</td>
+            <td class="column2"></td>
+            <td class="column3"></td>
+            <td class="column4"><img class="darkcheck" src="/images/checkdark.png" /></td>
+            <td class="column5"></td>
+            <td class="column6"><img class="darkcheck" src="/images/checkdark.png" /></td>
+            <td class="column7"></td>
+            <td class="column8"><img class="darkcheck" src="/images/checkdark.png" /></td>
+          </tr>
+          <tr class="row2">
+            <td class="column1">Website Integration</td>
+            <td class="column2"></td>
+            <td class="column3"></td>
+            <td class="column4"><img class="darkcheck" src="/images/checkdark.png" /></td>
+            <td class="column5"></td>
+            <td class="column6"><img class="darkcheck" src="/images/checkdark.png" /></td>
+            <td class="column7"></td>
+            <td class="column8"><img class="darkcheck" src="/images/checkdark.png" /></td>
+          </tr>
+          <tr class="row1">
+            <td class="column1">Advanced Form Features</td>
+            <td class="column2"></td>
+            <td class="column3"></td>
+            <td class="column4"></td>
+            <td class="column5"></td>
+            <td class="column6"><img class="darkcheck" src="/images/checkdark.png" /></td>
+            <td class="column7"></td>
+            <td class="column8"><img class="darkcheck" src="/images/checkdark.png" /></td>
+          </tr>
+          <tr class="row2">
+            <td class="column1">Secure Website Portal</td>
+            <td class="column2"></td>
+            <td class="column3"></td>
+            <td class="column4"></td>
+            <td class="column5"></td>
+            <td class="column6"><img class="darkcheck" src="/images/checkdark.png" /></td>
+            <td class="column7"></td>
+            <td class="column8"><img class="darkcheck" src="/images/checkdark.png" /></td>
+          </tr>
+          <tr class="row1">
+            <td class="column1">PDF &amp; Word Forms</td>
+            <td class="column2"></td>
+            <td class="column3"></td>
+            <td class="column4"></td>
+            <td class="column5"></td>
+            <td class="column6"></td>
+            <td class="column7"></td>
+            <td class="column8"><img class="darkcheck" src="/images/checkdark.png" /></td>
+          </tr>
+          <tr class="row2">
+            <td class="column1">Widgets</td>
+            <td class="column2"></td>
+            <td class="column3"></td>
+            <td class="column4"></td>
+            <td class="column5"></td>
+            <td class="column6"></td>
+            <td class="column7"></td>
+            <td class="column8"><img class="darkcheck" src="/images/checkdark.png" /></td>
+          </tr>
+          <tr class="row1">
+            <td class="column1">Templates</td>
+            <td class="column2"></td>
+            <td class="column3"></td>
+            <td class="column4"></td>
+            <td class="column5"></td>
+            <td class="column6"></td>
+            <td class="column7"></td>
+            <td class="column8"><img class="darkcheck" src="/images/checkdark.png" /></td>
+          </tr>
+          <tr class="row2">
+            <td class="column1">Enterprise API</td>
+            <td class="column2"></td>
+            <td class="column3"></td>
+            <td class="column4"></td>
+            <td class="column5"></td>
+            <td class="column6"></td>
+            <td class="column7"></td>
+            <td class="column8"><img class="darkcheck" src="/images/checkdark.png" /></td>
+          </tr>
+        </table>
+      </div><!-- End Secondary Panel -->
+    </div><!-- End Backgrounded -->
+      
+    <div id="secpanel">
+      <h1>Totality PS</h1>
+      <h3>Securely print &amp; scan from the web</h3>
+    </div>
+    <div class="border"></div>
+      
+    <div id="secpanel">
+      <h1>WebTotality Professional Services</h1>
+      <h3>C#, Java and Javascript Development</h3>
+      <p>Beyond the normal phone &amp; email support provided by the maintenance agreement, WebTotality can provide Java, C# and Javascript development assistance for your project using WebTotality products.</p>
+      <div class="pricing" style="margin: -95px 0px 0px 0px;">
+        <p style="margin: 5px 0px 0px 0px;">Starting at<strong style="letter-spacing: 1px; padding: 0px 0px 0px 1px;">...</strong></p>
+        <h3 style="margin: 10px 0px 0px 0px;">$40<span style="font-weight: normal;">/</span><span class="pricingsmalltext">hr</span></h3>
+      </div>
+    </div>
+
+
+    <div class="push"></div>
+  </div><!-- End Main -->
+
+
+  <!-- Begin Footer -->
+  <div id="footer" style="margin: 0px auto 0px auto;">
+    <div id="footerborder"></div>
+    <img class="shadow" src="/images/shadow.png" />
+    <div id="footerbox">
+      <div class="footersection" style="margin-left: -15px; padding-left: 0px">
+        <ul><a href="/products.html"><h4>Products</h4></a>
+          <li><a href="http://www.pubplace.com">PubPlace</a></li>
+          <li><a href="/products_cs.html">Totality Content Server</a></li>
+          <li><a href="/products_ps.html">Totality PS</a></li>
+        </ul>
+      </div><!-- End Footer Section -->
+      <div class="footersection">
+        <ul><h4>Developer</h4>
+          <li><a href="http://WebTotality.PubPlace.com?id=p22104d709807">Word &amp; PDF Template Specs</a></li>
+          <li><a href="http://WebTotality.PubPlace.com?id=p22104d22106">Totality REST API</a></li>
+        </ul>
+      </div><!-- End Footer Section -->
+      <div class="footersection">
+        <ul><a href="/corporate.html"><h4>Corporate</h4></a>
+          <li><a href="/investors.html">Investors</a></li>
+          <li><a href="http://WebTotality.PubPlace.com?id=p5774d198909">Terms of Service</a></li>
+          <li><a href="http://WebTotality.PubPlace.com?id=p5774d198759">Privacy Policy</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+      </div><!-- End Footer Section -->
+      <div class="footersection" style="border-right: none; padding-right: 0px">
+        <ul><h4>Download</h4>
+          <li><a href="#">Totality PS Free</a></li>
+          <li><a href="#">Totality Content Server Demo</a></li>
+        </ul>
+      </div><!-- End Footer Section -->
+    </div><!-- End Footer Box -->
+    <div id="corporate">
+      <p>WebTotality and www.WebTotality.com &copy; 2013 WebTotality corp.</p>
+    </div><!-- End Corporate -->
+  </div><!-- End Footer -->
+
+
+
+ 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!--<div class="whitepanel" style="position: absolute; top: 20px; left: 950px; width: 850px; height: 200px;">
+        <div class="roundshadow"></div>
+        <div class="whitegrad smshadow tenround actualpanel">
+        </div>
+      </div>-->

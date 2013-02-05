@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+  _    _                _                   _____ _         _           
+ | |  | |              | |                 / ____| |       | |          
+ | |__| | ___  __ _  __| | ___ _ __       | (___ | |_ _   _| | ___  ___ 
+ |  __  |/ _ \/ _` |/ _` |/ _ \ '__|       \___ \| __| | | | |/ _ \/ __|
+ | |  | |  __/ (_| | (_| |  __/ |          ____) | |_| |_| | |  __/\__ \
+ |_|  |_|\___|\__,_|\__,_|\___|_|         |_____/ \__|\__, |_|\___||___/
+                                                       __/ |            
+                                                      |___/             
+*/
+
+
+#header {
+	position: relative;
+	top: 0px;
+	z-index: 1002;
+	height: 80px;
+	width: 100%;
+	min-width: 960px;
+}
+
+#upperheader {
+	background: url(../images/background_upperheader.png) repeat;
+}
+
+#headerbackground {
+	position: absolute;
+	top: 0px;
+	z-index: 1000;
+	height: 80px;
+	width: 100%;
+	min-width: 960px;
+
+	background: #FFF;
+	border-bottom: 2px solid #2969af;
+}
+
+/*#secondaryheaderbackground {
+	position: fixed;
+	top: 0px;
+	z-index: 1001;
+	height: 24px;
+	width: 100%;
+	min-width: 960px;
+
+	background: rgba(0, 0, 0, .25);
+	border-bottom: 1px solid #444;
+}*/
+
+#headercontainer {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+
+#nav {
+	position: absolute;
+	top: 22px;
+	right: 0px;
+	display: inline-block;
+}
+
+#secondarynav {
+	position: absolute;
+	top: 0px;
+	right: -20px;
+	display: inline-block;
+}
+
+.navlinks {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	color: #888888;
+	padding: 10px 27px;
+
+	transition: color .2s;
+	-moz-transition: color .2s;
+	-webkit-transition: color .2s;
+	-o-transition: color .2s;
+}
+
+.navlinks:hover {
+	color: #444;
+}
+
+.secondarynavlinks {
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+	color: #CCC;
+	padding: 5px 18px;
+
+	transition: color .2s;
+	-moz-transition: color .2s;
+	-webkit-transition: color .2s;
+	-o-transition: color .2s;
+}
+
+.secondarynavlinks:hover {
+	color: #999;
+}
+
+/*#branding {
+	border-left: 1px solid #303030;
+	border-right: 1px solid #303030;
+	border-bottom: 1px solid #303030;
+	width: 230px;
+	height: 80px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .65);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .65);
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .65);
+}*/
+
+#logo {
+	opacity: .5;
+	position: absolute;
+	top: 13px;
+	left: 0px;
+
+	transition: opacity .2s;
+	-moz-transition: opacity .2s;
+	-webkit-transition: opacity .2s;
+	-o-transition: opacity .2s;
+}
+
+#logo:hover {
+	opacity: .6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>WebTotality</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+    <link type="text/css" rel="stylesheet" href="styles/footerstyle.css">
+    <link type="text/css" rel="stylesheet" href="styles/headerstyle.css">
+
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/scrollTo.js"></script>
+    <script src="js/jquery.easing.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+
+
+    <script type='text/javascript'> // Functions for the hero nav
+      $(document).ready( function() {
+        $('#heronavitem1').addClass('heronavitemon').removeClass('heronavitem');
+        $('.heronavitem').click(function() {
+            $('.heronavitemon').addClass('heronavitem').removeClass('heronavitemon');
+            $(this).addClass('heronavitemon').removeClass('heronavitem');
+        });
+        $('#heronavitem1').click(function() {
+            $('.heronavitemon').addClass('heronavitem').removeClass('heronavitemon');
+            $(this).addClass('heronavitemon').removeClass('heronavitem');
+        });
+      });
+    </script>
+
+    <script type='text/javascript'> // Functions for the hero nav animations
+      $(document).ready( function() {
+        var herospeed = 200;
+        $('.homebanner:not(#banner1), .homesubtitle:not(#subbanner1), .heroimg:not(#heroimg1)').animate({opacity: 0}, 0);
+        $('#heronavitem1').click(function() {
+            $('#heronavdot').animate({left: 94}, herospeed, 'easeOutSine');
+            $('.banneron:not(#banner1, #subbanner1)').animate({opacity: 0, left: -800}, herospeed, 'easeOutSine').removeClass('banneron');
+            $('#banner1, #subbanner1').animate({left: 0}).animate({opacity: 1}, herospeed, 'easeOutSine').addClass('banneron');
+            $('.heroimg:not(#heroimg1)').animate({opacity: 0, right: 500}, herospeed, 'easeOutSine').addClass('heroimgoff');
+            $('#heroimg1').animate({right: 0}).animate({opacity: 1}, herospeed, 'easeOutSine').removeClass('heroimgoff');
+            $('#createfreeaccount').animate({top: 338}, herospeed, 'easeOutSine');
+        });
+        $('#heronavitem2').click(function() {
+            $('#heronavdot').animate({left: 175}, herospeed, 'easeOutSine');
+            $('.banneron:not(#banner2, #subbanner2)').animate({opacity: 0, left: -800}, herospeed, 'easeOutSine').removeClass('banneron');
+            $('#banner2, #subbanner2').animate({left: 0}).animate({opacity: 1}, herospeed, 'easeOutSine').addClass('banneron');
+            $('.heroimg:not(#heroimg2)').animate({opacity: 0, right: 500}, herospeed, 'easeOutSine').addClass('heroimgoff');
+            $('#heroimg2').animate({right: -30}).animate({opacity: 1}, herospeed, 'easeOutSine').removeClass('heroimgoff');
+            $('#createfreeaccount').animate({top: 326}, herospeed, 'easeOutSine');
+        });
+        $('#heronavitem3').click(function() {
+            $('#heronavdot').animate({left: 257}, herospeed, 'easeOutSine');
+            $('.banneron:not(#banner3, #subbanner3)').animate({opacity: 0, left: -800}, herospeed, 'easeOutSine').removeClass('banneron');
+            $('#banner3, #subbanner3').animate({left: 0}).animate({opacity: 1}, herospeed, 'easeOutSine').addClass('banneron');
+            $('.heroimg:not(#heroimg3)').animate({opacity: 0, right: 500}, herospeed, 'easeOutSine').addClass('heroimgoff');
+            $('#heroimg3').animate({right: 0}).animate({opacity: 1}, herospeed, 'easeOutSine').removeClass('heroimgoff');
+            $('#createfreeaccount').animate({top: 293}, herospeed, 'easeOutSine');
+        });
+        $('#heronavitem4').click(function() {
+            $('#heronavdot').animate({left: 339}, herospeed, 'easeOutSine');
+            $('.banneron:not(#banner4, #subbanner4)').animate({opacity: 0, left: -800}, herospeed, 'easeOutSine').removeClass('banneron');
+            $('#banner4, #subbanner4').animate({left: 0}).animate({opacity: 1}, herospeed, 'easeOutSine').addClass('banneron');
+            $('.heroimg:not(#heroimg4)').animate({opacity: 0, right: 500}, herospeed, 'easeOutSine').addClass('heroimgoff');
+            $('#heroimg4').animate({right: 70}).animate({opacity: 1}, herospeed, 'easeOutSine').removeClass('heroimgoff');
+            $('#createfreeaccount').animate({top: 293}, herospeed, 'easeOutSine');
+        });
+        $('#heronavitem5').click(function() {
+            $('#heronavdot').animate({left: 422}, herospeed, 'easeOutSine');
+            $('.banneron:not(#banner5, #subbanner5)').animate({opacity: 0, left: -800}, herospeed, 'easeOutSine').removeClass('banneron');
+            $('#banner5, #subbanner5').animate({left: 0}).animate({opacity: 1}, herospeed, 'easeOutSine').addClass('banneron');
+            $('.heroimg:not(#heroimg5)').animate({opacity: 0, right: 500}, herospeed, 'easeOutSine').addClass('heroimgoff');
+            $('#heroimg5').animate({right: -20}).animate({opacity: 1}, herospeed, 'easeOutSine').removeClass('heroimgoff');
+            $('#createfreeaccount').animate({top: 293}, herospeed, 'easeOutSine');
+        });
+      });
+    </script>
+
+    <script type='text/javascript'> // Functions for the hero nav animations
+      $(document).ready( function() {
+        $('.tryitbutton').click(function() {
+            $('#tryit').show();
+        });
+        $('.closetryit').click(function() {
+            $('#tryit').hide();
+        });
+      });
+    </script>
+  
+</head>
+<body>
+
+  <div id="tryit">
+
+    <div id="headerbackground"><div id="secondaryheaderbackground"></div></div>
+    <div id="header">
+      <div id="headercontainer">
+        <a href="/index.html"><div id="branding"><img id="logo" src="/images/logo.png" /></div></a>
+        <div id="nav">
+          <ul>
+            <a href="#" class="closetryit"><li class="navlinks" >Home</li></a>
+            <a href="/products.html"><li class="navlinks" >Products</li></a>
+            <a href="/pricing.html"><li class="navlinks" >Pricing</li></a>
+            <a href="/support.html"><li class="navlinks" >Support</li></a>
+            <a href="#" class="tryitbutton"><li class="navlinks" style="padding: 10px 0px 10px 27px;" >Try It</li></a>
+          </ul>
+        </div><!-- End Nav -->
+      </div><!-- End Header Container -->
+
+      <div class="tryitcontainer">
+
+        <div class="tryitbox">
+          <h2>Try It Online</h2>
+          <h4>Create a free account on PubPlace to demo our software online</h4>
+          <a class="mainbutton newaccountbutton tryitbutton" href="http://www.pubplace.com" style="letter-spacing: 1px; padding: 13px 51px 13px 48px; text-transform: uppercase; word-spacing: 2px; font-size: 14px; font-weight: 400; text-shadow: 0 2px 3px rgba(0, 0, 0, .4); margin: 40px 0px 0px 90px;">Try It Online</a>
+        </div>
+
+        <div class="tryitbox" style="margin-right: 0px;">
+          <h2>Try It on Your Server</h2>
+          <h4>Download our free trial Totality Content Server onto your computer</h4>
+          <a class="mainbutton newaccountbutton tryitbutton" href="#" style="letter-spacing: 1px; padding: 13px 51px 13px 48px; text-transform: uppercase; word-spacing: 2px; font-size: 14px; font-weight: 400; text-shadow: 0 2px 3px rgba(0, 0, 0, .4); margin: 40px 0px 0px 90px;">Download It</a>
+        </div>
+
+      </div>
+
+    </div><!-- End Try It -->
+
+  </div>
+
+  <div id="main" style="margin: 0 auto -330px;">
+
+    <div id="upper">
+
+      <div id="headerbackground"><div id="secondaryheaderbackground"></div></div>
+      <div id="header">
+        <div id="headercontainer">
+          <a href="/index.html"><div id="branding"><img id="logo" src="/images/logo.png" /></div></a>
+          <div id="nav">
+            <ul>
+              <a href="/products.html"><li class="navlinks" >Products</li></a>
+              <a href="/pricing.html"><li class="navlinks" >Pricing</li></a>
+              <a href="/support.html"><li class="navlinks" >Support</li></a>
+              <a href="#" class="tryitbutton"><li class="navlinks" style="padding: 10px 0px 10px 27px;" >Try It</li></a>
+            </ul>
+          </div><!-- End Nav -->
+        </div><!-- End Header Container -->
+      </div><!-- End Header -->
+
+      <div id="hero">
+        <div id="spacer"></div>
+
+
+        <h1 class="homebanner banneron" id="banner1"><span>A better way</span> <br>to <span style="font-weight: 600;">Publish</span></h1>
+        <h3 class="homesubtitle banneron" id="subbanner1" style="width: 500px;">Forms, surveys, polls, Word &amp; PDF docs, widgets, templates, reports &amp; more.</h3>
+        <img class="heroimg" id="heroimg1" src="/images/intro.png" />
+
+        <h1 class="homebanner" id="banner2">Create</h1>
+        <h3 class="homesubtitle" id="subbanner2">Create content using PubPlace templates, your own custom templates, PDF, Word &amp; Excel documents and more.</h3>
+        <img class="heroimg heroimgoff" id="heroimg2" src="/images/create.png" />
+
+        <h1 class="homebanner" id="banner3">Publish</h1>
+        <h3 class="homesubtitle" id="subbanner3">Publish your content on PubPlace, <br>your website, facebook or via email.</h3>
+        <img class="heroimg heroimgoff" id="heroimg3" src="/images/publish.png" />
+
+        <h1 class="homebanner" id="banner4">Interact</h1>
+        <h3 class="homesubtitle" id="subbanner4">Interact with your audience. Republish form responses in form letters &amp; templates.</h3>
+        <img class="heroimg heroimgoff" id="heroimg4" src="/images/interact.png" />
+
+
+        <h1 class="homebanner" id="banner5">Report</h1>
+        <h3 class="homesubtitle" id="subbanner5">View &amp; download reports for <br>all your documents &amp; forms.</h3>
+        <img class="heroimg heroimgoff" id="heroimg5" src="/images/report.png" />
+
+        <div id="createfreeaccount">
+          <a class="mainbutton newaccountbutton tryitbutton" href="#" style="letter-spacing: 1px; padding: 13px 51px 13px 48px; text-transform: uppercase; word-spacing: 2px; font-size: 14px; font-weight: 400; text-shadow: 0 2px 3px rgba(0, 0, 0, .4);">Try It Free</a>
+          <a class="secondary" href="#">See what <br> you can do</a>
+        </div>
+
+
+        <div id="heronavbox">
+          <div id="heronavbackground"></div>
+          <img class="heronavdoton" id="heronavdot" src="/images/heronavdot.png" />
+          <ul id="heronavlist">
+            <li class="heronavitem" id="heronavitem1"><img class="heronavdot" src="/images/heronavdot.png" />Intro</li>
+            <li class="heronavitem" id="heronavitem2"><img class="heronavdot" src="/images/heronavdot.png" />Create</li>
+            <li class="heronavitem" id="heronavitem3"><img class="heronavdot" src="/images/heronavdot.png" />Publish</li>
+            <li class="heronavitem" id="heronavitem4"><img class="heronavdot" src="/images/heronavdot.png" />Interact</li>
+            <li class="heronavitem" id="heronavitem5"><img class="heronavdot" src="/images/heronavdot.png" />Report</li>
+          </ul>
+        </div><!-- End Hero Nav Box -->
+
+      </div><!-- End Hero -->
+
+    </div><!-- End Upper -->
+
+
+    <img class="shadow" src="/images/shadow.png" />
+    <div id="secpanel" style="height: 240px;">
+      <div id="panel1" class="whitepanel productpanel" style="margin: 20px 10px 0px 0px;" >
+        <div class="colored actualpanel">
+          <h3 class="panelheader">Industry Standard</h3>
+          <img class="subpanelimg" id="subpanelimg1" src="images/subpanelimg1_black.png">
+          <ul style="margin: 25px 30px 0px 20px;">
+            <li><img class="darkcheck2" src="/images/checkdark.png" />Download all your PubPlace content in Word, Excel or PDF formats</li>
+            <li><img class="darkcheck2" src="/images/checkdark.png" />Leverage your investment in Microsoft Office and Adobe PDF</li>
+            <li><img class="darkcheck2" src="/images/checkdark.png" />Don&rsquo;t be held hostage by websites using proprietary file formats</li>
+          </ul>
+        </div>
+      </div><!-- End Panel #1 -->
+      <div id="panel2" class="whitepanel productpanel" style="margin: 20px 0px 0px 0px;" >
+        <div class="colored actualpanel">
+          <h3 class="panelheader">100% HTML</h3>
+          <img class="subpanelimg" id="subpanelimg2" src="images/subpanelimg2.png">
+          <ul style="margin: 25px 0px 0px 20px;">
+            <li><img class="darkcheck2" src="/images/checkdark.png" />Mobile &amp; Tablet friendly</li>
+            <li><img class="darkcheck2" src="/images/checkdark.png" />No Flash, apps or special mobile sites required</li>
+            <li><img class="darkcheck2" src="/images/checkdark.png" />All PubPlace content is published as 100% HTML</li>
+          </ul>
+        </div>
+      </div><!-- End Panel #2 -->
+    </div><!-- End Secondary Panel -->
+
+
+    <img class="shadow" src="/images/shadow.png" />
+    <div id="secpanel" style="height: 204px; padding: 30px 0px 30px 0px;">
+
+      <div class="mini_panel" style="width: 266px; top: 0px; left: 0px;">
+        <a href="/news.html">
+          <div class="roundshadow" style="bottom: 5px; width: 120px;"></div>
+          <div class="whitegrad smshadow tenround mini_subpanel" id="news_mini_panel">
+            <h4 class="mini_panel_header">News</h4>
+            <img src="/images/news_large.png" style="position: absolute; left: 16px; top: 25px;"/>
+          </div><!-- End Mini Panel -->
+        </a>
+
+        <a href="/blog.html" style="top: 0px; right: 0px;">
+          <div class="roundshadow" style="bottom: 5px; width: 120px;"></div>
+          <div class="whitegrad smshadow tenround mini_subpanel" id="blog_mini_panel">
+            <h4 class="mini_panel_header">Blog</h4>
+            <img src="/images/blog_large.png" style="position: absolute; left: 22px; top: 28px;"/>
+          </div><!-- End Mini Panel -->
+        </a>
+
+        <a href="Filler" style="top: 120px;">
+          <div class="roundshadow" style="bottom: 5px; width: 250px;"></div>
+          <div class="whitegrad smshadow tenround mini_subpanel" id="ps_mini_panel">
+            <h4 class="mini_panel_header">Free Totality PS Download</h4>
+            <img src="/images/home_psdownload.png" style="margin: -21px 0px 0px 24px; z-index: 0; position: relative;" />
+          </div><!-- End Mini Panel -->
+        </a>
+      </div><!-- End Mini Panel -->
+
+      <a href="/products_pubplace.html" style="top: 120px;">
+        <div class="roundshadow" style="bottom: 5px; width: 250px;"></div>
+        <div class="whitegrad smshadow tenround mini_subpanel mini_panel" style="margin: 7px 10px 5px 3px;">
+          <h4 class="mini_panel_header_larger">On the Web</h4>
+          <ul style="margin: 25px 0px 0px 20px;">
+            <li><img class="darkcheck2" src="/images/checkdark.png" />Ready to Use</li>
+            <li><img class="darkcheck2" src="/images/checkdark.png" />Monthly plans</li>
+            <li><img class="darkcheck2" src="/images/checkdark.png" />Easy to Use</li>
+          </ul>
+        </div><!-- End Mini Panel -->
+      </a>
+
+      <a href="/products_cs.html" style="top: 120px;">
+        <div class="roundshadow" style="bottom: 5px; width: 250px;"></div>
+        <div class="whitegrad smshadow tenround mini_subpanel mini_panel" style="margin: 7px 0px 5px 0px; height: 223px;">
+          <h4 class="mini_panel_header_larger">On Your Server</h4>
+          <ul style="margin: 25px 0px 0px 20px;">
+            <li><img class="darkcheck2" src="/images/checkdark.png" />Installable</li>
+            <li><img class="darkcheck2" src="/images/checkdark.png" />Yearly plans</li>
+            <li><img class="darkcheck2" src="/images/checkdark.png" />All the same functionality as online</li>
+          </ul>
+        </div><!-- End Mini Panel -->
+      </a>
+
+
+    </div><!-- End Secondary Panel -->
+
+
+
+
+    <div class="push"></div>
+  </div><!-- End Main -->
+
+
+
+
+  <!-- Begin Footer -->
+  <div id="footer" style="margin: 0px auto 0px auto;">
+    <div id="footerborder"></div>
+    <img class="shadow" src="/images/shadow.png" />
+    <div id="footerbox">
+      <div class="footersection" style="margin-left: -15px; padding-left: 0px">
+        <ul><a href="/products.html"><h4>Products</h4></a>
+          <li><a href="http://www.pubplace.com">PubPlace</a></li>
+          <li><a href="/products_cs.html">Totality Content Server</a></li>
+          <li><a href="/products_ps.html">Totality PS</a></li>
+        </ul>
+      </div><!-- End Footer Section -->
+      <div class="footersection">
+        <ul><h4>Developer</h4>
+          <li><a href="http://WebTotality.PubPlace.com?id=p22104d709807">Word &amp; PDF Template Specs</a></li>
+          <li><a href="http://WebTotality.PubPlace.com?id=p22104d22106">Totality REST API</a></li>
+        </ul>
+      </div><!-- End Footer Section -->
+      <div class="footersection">
+        <ul><a href="/corporate.html"><h4>Corporate</h4></a>
+          <li><a href="/investors.html">Investors</a></li>
+          <li><a href="http://WebTotality.PubPlace.com?id=p5774d198909">Terms of Service</a></li>
+          <li><a href="http://WebTotality.PubPlace.com?id=p5774d198759">Privacy Policy</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+      </div><!-- End Footer Section -->
+      <div class="footersection" style="border-right: none; padding-right: 0px">
+        <ul><h4>Download</h4>
+          <li><a href="#">Totality PS Free</a></li>
+          <li><a href="#">Totality Content Server Demo</a></li>
+        </ul>
+      </div><!-- End Footer Section -->
+    </div><!-- End Footer Box -->
+    <div id="corporate">
+      <p>WebTotality and www.WebTotality.com &copy; 2013 WebTotality corp.</p>
+    </div><!-- End Corporate -->
+  </div><!-- End Footer -->
+
+ 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!--<div class="whitepanel" style="position: absolute; top: 20px; left: 950px; width: 850px; height: 200px;">
+        <div class="roundshadow"></div>
+        <div class="whitegrad smshadow tenround actualpanel">
+        </div>
+      </div>-->

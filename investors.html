@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>WebTotality</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+
+    <link type="text/css" rel="stylesheet" href="styles/style.css">
+    <link type="text/css" rel="stylesheet" href="styles/footerstyle.css">
+    <link type="text/css" rel="stylesheet" href="styles/headerstyle.css">
+
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery.easing.js"></script>
+  
+    <script type="text/javascript" src="https://s3.amazonaws.com/pubplace/webtotality/23105/jquery.pubplace-1.3.3.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        pubDisplaySettings("investorblogpanel","790");
+        var result = pubDisplayURLDocument();
+        pubDisplayDocList("WebTotality","InvestInfo","investorbloglist",!result,"investors.html");      
+      });
+      $.ajax({
+        url: “https://www.pubplace.com/ts/login.jsp",
+        cache: false,
+        success: function(data){
+          authorized = ($(data).find("#authorized").text() == "true");
+          if(authorized){
+            $(“#login”).hide();
+            var result = pubDisplayURLDocument();
+            pubDisplayDocList("WebTotality","InvestInfo","investorbloglist",!result,"investors.html");
+          }
+        },
+          dataType: "xml",
+          error: function(req,text,err){
+            alert("check authentication: "+text);
+          }
+      });
+
+      function onAuth(result,str){
+        document.body.style.cursor = "default";
+        if(result){
+          pubDisplayDocList("WebTotality","InvestInfo","investorbloglist",!result,"investors.html");
+        }
+        else{
+          alert(str);
+        }
+      }
+      
+      function login(){
+        authenticate($("#j_username").val(),$("#j_password").val(),'onAuth');
+      }
+
+      $(function() {
+        $("#j_username").keydown(function(event){
+          if(event.keyCode >= 48)
+            $("#usernamelab").html("");
+        });
+        $("#j_password").keydown(function(event){
+          if(event.keyCode >= 48)
+            $("#passwordlab").html("");
+        });
+        $("#j_password").keyup(function(event){
+          if(event.keyCode == 13){
+            document.body.style.cursor = "wait";
+            authenticate($("#j_username").val(),$("#j_password").val(),'onAuth');
+          }
+        });
+      });
+
+
+
+  
+    </script>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body>
+  <div id="main">
+
+    <div id="upper" style="height: 70px;">
+
+      <div id="headerbackground"><div id="secondaryheaderbackground"></div></div>
+      <div id="header">
+        <div id="headercontainer">
+          <a href="/index.html"><div id="branding"><img id="logo" src="/images/logo.png" /></div></a>
+          <div id="nav">
+            <ul>
+              <a href="/index.html"><li class="navlinks" >Home</li></a>
+              <a href="/products.html"><li class="navlinks" >Products</li></a>
+              <a href="/pricing.html"><li class="navlinks" >Pricing</li></a>
+              <a href="/support.html"><li class="navlinks" >Support</li></a>
+              <a href="http://www.pubplace.com"><li class="navlinks" style="padding: 10px 0px 10px 27px;" >Try It</li></a>
+            </ul>
+          </div><!-- End Nav -->
+        </div><!-- End Header Container -->
+      </div><!-- End Header -->
+    </div><!-- End Upper -->
+
+
+    <div class="backgrounded" style="margin: 0px 0px -22px 0px;">      
+      <div id="secpanel">
+
+        <div id="login">
+
+          <h1>Investors</h1>
+          <h3>Login below to access the investor portal</h3>
+
+          <div class="loginfield_white">
+            <div class="subloginfield">
+              <label id='usernamelab'>Username</label>
+            </div>
+            <div class="subloginfield">
+              <input tabindex=1 size='10' type="text" name="j_username" id="j_username"/>
+            </div>
+          </div>
+
+          <div class="loginfield_white">
+            <div class="subloginfield">
+              <label id='passwordlab'>Password</label>
+            </div>
+            <div class="subloginfield">
+              <input tabindex=2 size='10' type="password" name="j_password" id="j_password"/>
+            </div>
+          </div>
+
+          <a id="loginbutton" class="mainbutton" href='javascript:login();'>log in</a>
+          <a id="forgot" href="/support.html"><p>Don't have a login? Forgot your login or password?</p></a>
+        </div><!-- End Login -->
+
+
+        <div id="investorbloglist" class="bloglist">
+
+        </div><!-- End Blog List -->
+
+
+        <div id="investorblogpanel" class="blogpanel">
+          <!--<h1>Header Size and Style</h1>
+          <h2>Second Header Size and Style</h2>
+          <h3>Third Header Size and Style</h3>
+          <h4>Fourth Header Size and Style</h4>
+          <p>Paragraph Size and Style</p>-->
+
+        </div><!-- End Blog Panel -->
+
+      </div><!-- End Secondary Panel -->
+    </div><!-- End Backgrounded -->
+
+
+
+    <div class="push"></div>
+  </div><!-- End Main -->
+
+
+  <!-- Begin Footer -->
+  <div id="lightfooter" style="margin: 0px auto 0px auto;">
+    <div id="footerborder"></div>
+    <img class="shadow" src="/images/shadow.png" />
+    <div id="footerbox">
+      <div class="footersection" style="margin-left: -15px; padding-left: 0px">
+        <ul><a href="/products.html"><h4>Products</h4></a>
+          <li><a href="http://www.pubplace.com">PubPlace</a></li>
+          <li><a href="/products_cs.html">Totality Content Server</a></li>
+          <li><a href="/products_ps.html">Totality PS</a></li>
+        </ul>
+      </div><!-- End Footer Section -->
+      <div class="footersection">
+        <ul><h4>Developer</h4>
+          <li><a href="http://WebTotality.PubPlace.com?id=p22104d709807">Word &amp; PDF Template Specs</a></li>
+          <li><a href="http://WebTotality.PubPlace.com?id=p22104d22106">Totality REST API</a></li>
+        </ul>
+      </div><!-- End Footer Section -->
+      <div class="footersection">
+        <ul><a href="/corporate.html"><h4>Corporate</h4></a>
+          <li><a href="/investors.html">Investors</a></li>
+          <li><a href="http://WebTotality.PubPlace.com?id=p5774d198909">Terms of Service</a></li>
+          <li><a href="http://WebTotality.PubPlace.com?id=p5774d198759">Privacy Policy</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+        </ul>
+      </div><!-- End Footer Section -->
+      <div class="footersection" style="border-right: none; padding-right: 0px">
+        <ul><h4>Download</h4>
+          <li><a href="#">Totality PS Free</a></li>
+          <li><a href="#">Totality Content Server Demo</a></li>
+        </ul>
+      </div><!-- End Footer Section -->
+    </div><!-- End Footer Box -->
+    <div id="corporate">
+      <p>WebTotality and www.WebTotality.com &copy; 2013 WebTotality corp.</p>
+    </div><!-- End Corporate -->
+  </div><!-- End Footer -->
+
+
+
+ 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!--<div class="whitepanel" style="position: absolute; top: 20px; left: 950px; width: 850px; height: 200px;">
+        <div class="roundshadow"></div>
+        <div class="whitegrad smshadow tenround actualpanel">
+        </div>
+      </div>-->
